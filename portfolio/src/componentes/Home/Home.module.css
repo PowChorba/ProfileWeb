@@ -2,34 +2,41 @@
     text-align: center;
 }
 
+.arrow {
+    position: absolute;
+    bottom: 10px;
+    right: 5px;
+    font-size: 30px;
+}
 
 /*INICIO*/
 
 .inicio {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     width: 75%;
     margin: 0px auto;
-    padding: 200px 0px 450px 50px;
-    transition: 1s ease all;
+    padding: 250px 0px 450px 50px;
     border-bottom: 1px solid #000;
 }
 
 .inicioT {
     font-size: 40px;
-   
+    /* color: rgb(14, 230, 136); */
+    color: #000;
 
 }
 .imagenFondo{
-    width: 100%;
-    background-image: url('../imagenes/vamosviendo.jpg');
+    /* width: 100%; */
+    background-image: url('../imagenes/fondo.jpg');
     background-size: 100%;
 }
 
 .inicioP {
     margin-top: 40px;
     font-size: 30px;
+    color: #000;
 }
 
 /*ABOUT*/
@@ -40,7 +47,8 @@
     width: 75%;
     margin: 0px auto;
     padding: 200px 0px 150px 0px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
+    
 }
 
 .aboutT{
@@ -51,7 +59,7 @@
 
 .agop {
     width: 400px;
-    border: 2px solid #000;
+    border: 2px solid #fff;
     padding: 2px;
     border-radius: 25px;
 }
@@ -85,7 +93,7 @@
     width: 75%;
     margin: 0px auto;
     padding: 200px 0px 150px 0px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     
 }
 
@@ -105,20 +113,19 @@
     border: 1px solid rgba(0, 0, 0, 0.452);
     border-radius: 10px;
     padding: 10px;
-    box-shadow: 2px 13px 5px 0px rgba(0,0,0,0.75);
-    background-color: #fff;
+    box-shadow: 2px 13px 5px 0px rgba(0, 0, 0, 0.80);
+    background-color: rgba(255, 255, 255, 0.507);
+    /* background-color: rgba(0, 0, 0, 0.26); */
 }
-.prueba:hover{
-    transition: 1s;
-    transform: scale(105%);
-}
+
 
 .linkRepo {
     text-decoration: none;
-    color: #000;
+    color: #fff;
+    margin-top: 15px;
 }
 .linkRepo:hover {
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
 }
 
 /*FORMULARIO*/
@@ -127,8 +134,9 @@
     width: 75%;
     margin: 0px auto;
     padding: 200px 0px 150px 0px;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid #fff;
     text-align: center;
+    position: relative;
 }
 
 .contactTitulo {
@@ -141,7 +149,7 @@
     grid-template-columns: 1fr 1fr;
     width: 50%;
     margin: 0px auto;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.507);
     padding: 50px;
     font-size: 20px;
     border-radius: 10px;
@@ -175,7 +183,7 @@
     
 }
 .inputSubject:focus{
-    border: 3px solid rgb(110, 209, 248);
+    border: 3px solid rgb(0, 111, 111);
     outline: 0;
 }
 
@@ -235,10 +243,10 @@
     }
     .inicioT {
         font-size: 24px;
-        color: #fff;
+        color: #000;
     }
     .imagenFondo{
-        background-image: url('../imagenes/vamosviendo.jpg');
+        background-image: url('../imagenes/fondo.jpg');
         background-size: cover;
         background-repeat: no-repeat;
         
@@ -302,21 +310,129 @@
         box-shadow: 2px 13px 5px 0px rgba(0,0,0,0.75);
         text-align: center;
         border: 1px solid #000;
+        color: #000;
+        
     }
     
     .contactDivArea, .contactSubject{
         text-align: center;
     }
 
-    
-    
-    
-    
-    
-    
+    .arrow{
+        right: -30px;
+    }
+}
 
+@media only screen and (max-width: 912px){
+    .inicio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        margin: 0px auto;
+        padding: 100px 0px 75px 0px;
+        
+    }
+    .imagenFondo{
+        background-image: url('../imagenes/fondo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .about {
+        display: block;
+        width: 75%;
+        margin: 0px auto;
+        padding: 75px 0px 30px 0px;
+        border-bottom: 1px solid #000;
+    }
+
+    .agop {
+        width: 300px;
+        border: 2px solid #000;
+        margin-top: 10px;
+        padding: 2px;
+        border-radius: 25px;
+    }
+
+    /* CONTACT */
+    .contact {
+        width: 75%;
+        margin: 0px auto;
+        padding: 75px 0px 30px 0px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+    }
     
-   
+    .contactTitulo {
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
     
+    .contactForm{
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+        background-color: #fff;
+        padding: 30px;
+        font-size: 16px;
+        border-radius: 10px;
+        box-shadow: 2px 13px 5px 0px rgba(0,0,0,0.75);
+        text-align: center;
+        border: 1px solid #000;
+        color: #000;
+        
+    }
+    
+    .contactDivArea, .contactSubject{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 1024px){
+    .inicio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        margin: 0px auto;
+        padding: 200px 0px 230px 0px;
+        
+    }
+
+    .about {
+        display: block;
+        width: 75%;
+        margin: 0px auto;
+        padding: 75px 0px 30px 0px;
+        border-bottom: 1px solid #000;
+    }
+
+    .agop {
+        width: 300px;
+        border: 2px solid #000;
+        margin-top: 10px;
+        padding: 2px;
+        border-radius: 25px;
+    }
+
+    /*PROYECTS*/
+
+    .proyects{
+        display: block;
+        width: 75%;
+        margin: 0px auto;
+        padding: 100px 0px 75px 0px;
+        border-bottom: 1px solid #000;
+    }
+
+    /* CONTACT */
+    .contact {
+        width: 75%;
+        margin: 0px auto;
+        padding: 75px 0px 30px 0px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+    }
     
 }
