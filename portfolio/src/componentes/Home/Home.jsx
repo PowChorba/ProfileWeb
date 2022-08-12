@@ -1,5 +1,5 @@
 import React from 'react'
-import Codigo from '../imagenes/codeando.png'
+import AOS from 'aos'
 import Nav from '../Nav/Nav'
 import Agop from '../imagenes/perfil.PNG'
 import HTML from '../imagenes/img/html.png'
@@ -13,23 +13,34 @@ import sequelize from '../imagenes/img/sequelize.png'
 import POKE from '../imagenes/img/pokedex.PNG'
 import Linkedin from '../imagenes/img/linkedin.png'
 import git from '../imagenes/img/github.png'
-
+import "aos/dist/aos.css";
 import s from './Home.module.css'
+import { useEffect } from 'react'
+import { BsFillArrowUpCircleFill } from "react-icons/bs";
+
 
 export default function Home(){
+    
+    useEffect(() => {
+        AOS.init();
+        AOS.refresh()
+    }, [])
+    
     return(
         <div className={s.contenedor}>
             <div className={s.nav}>
                 <Nav/>
             </div>
-            <div className={s.inicio} id='inicio'>
-                <div>
-                    <h1 className={s.inicioT}>Hi there!<br/><br/> I'm Agop Chorbadjian.</h1>
-                    <p className={s.inicioP}>FullStack Web Developer</p>
+            <div className={s.imagenFondo}>
+                <div className={s.inicio} id='inicio'>
+                    <div>
+                        <h1 className={s.inicioT}>Hi there!<br/><br/> I'm Agop Chorbadjian.</h1>
+                        <p className={s.inicioP}>FullStack Web Developer</p>
+                    </div>
+                    {/* <div><img src={Codigo} alt='asd' width='350px'/></div> */}
                 </div>
-                <div><img src={Codigo} alt='asd' width='350px'/></div>
             </div>
-            <div className={s.about} id='about' data-aos="zoom-in-left">
+            <div className={s.about} id='about' data-aos="fade-up-right">
                 
                     <h2 className={s.aboutT}>ABOUT ME</h2>
                 <div className={s.desc}>
@@ -62,7 +73,7 @@ export default function Home(){
                     <img src={Agop} alt="" className={s.agop}/>
                 </div>
             </div>
-            <div className={s.proyects} id='proyects'>
+            <div className={s.proyects} id='proyects' data-aos="fade-up-left">
                 <h2 className={s.proyectsT}>PROYECTS</h2>
                 <div className={s.prueba}>
                 <h4 className={s.gridTitulo}>PokeDex</h4>
@@ -74,8 +85,10 @@ export default function Home(){
                 <img src={POKE} alt="asd" width='100%'/>
                 <a href="https://pi-pokemons-chi.vercel.app/" target="_onblank" className={s.linkRepo}>Link to Page</a>
                 </div>
+                
+                
             </div>
-            <div id='contact' className={s.contact}>
+            <div id='contact' className={s.contact} data-aos="fade-up-right">
                 <h2 className={s.contactTitulo}>CONTACT</h2>
             <form className={s.contactForm} action="https://formsubmit.co/pow.chorba@hotmail.com" method="POST">
                 <div>

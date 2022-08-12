@@ -1,22 +1,33 @@
 .contenedor {
     text-align: center;
-   
+    /* background-image: url('../imagenes/fondo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; */
 }
+
 
 /*INICIO*/
 
 .inicio {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 75%;
     margin: 0px auto;
-    padding: 300px 0px;
-    border-bottom: 1px solid #000;
+    padding: 200px 0px 450px 50px;
     transition: 1s ease all;
+    border-bottom: 1px solid #000;
 }
 
 .inicioT {
     font-size: 40px;
+    /* animation: titulo 10s infinite; */
+
+}
+.imagenFondo{
+    width: 100%;
+    background-image: url('../imagenes/vamosviendo.jpg');
+    background-size: 100%;
 }
 
 .inicioP {
@@ -31,10 +42,8 @@
     grid-template-columns: 1fr 1fr;
     width: 75%;
     margin: 0px auto;
-    padding: 200px 0px;
+    padding: 200px 0px 150px 0px;
     border-bottom: 1px solid #000;
-    
-    
 }
 
 .aboutT{
@@ -45,7 +54,7 @@
 
 .agop {
     width: 400px;
-    border: 2px solid rgb(110, 209, 248);
+    border: 2px solid #000;
     padding: 2px;
     border-radius: 25px;
 }
@@ -78,7 +87,7 @@
     grid-template-columns: 1fr 1fr;
     width: 75%;
     margin: 0px auto;
-    padding: 200px 0px;
+    padding: 200px 0px 150px 0px;
     border-bottom: 1px solid #000;
     
 }
@@ -95,7 +104,7 @@
 }
 
 .prueba {
-    /* width: 100%; */
+    margin: 20px;
     border: 1px solid rgba(0, 0, 0, 0.452);
     border-radius: 10px;
     padding: 10px;
@@ -120,7 +129,7 @@
 .contact {
     width: 75%;
     margin: 0px auto;
-    padding: 200px 0px;
+    padding: 200px 0px 150px 0px;
     border-bottom: 1px solid #000;
     text-align: center;
 }
@@ -165,7 +174,7 @@
     width: 100%;
     padding: 10px 30px;
     border-radius: 5px;
-    border: 3px solid rgba(110, 209, 248, 0.548);
+    border: 3px solid #d8d1cf;
     
 }
 .inputSubject:focus{
@@ -178,12 +187,12 @@
     margin: 0px 5px;
     padding: 10px 30px;
     border-radius: 5px;
-    border: 3px solid rgba(110, 209, 248, 0.548);
+    border: 3px solid #d8d1cf;
 }
 
 .textarea {
     border-radius: 5px;
-    border: 3px solid rgba(110, 209, 248, 0.548);
+    border: 3px solid #d8d1cf;
     resize: none;
     width: 100%;
 }
@@ -208,10 +217,108 @@
     padding: 10px 30px;
     border-radius: 10px;
     border: none;
-    background-color: rgba(110, 209, 248, 0.548);
+    background-color: #d8d1cfc9;
 }
 
 .btn:hover{
-    background-color: rgb(110, 209, 248);
+    background-color: #d8d1cf;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 414px){
+    /* INICIO */
+    .inicio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        margin: 0px auto;
+        padding: 100px 0px 75px 0px;
+        
+    }
+    .inicioT {
+        font-size: 24px;
+    }
+    .imagenFondo{
+        width: 100%;
+        background-image: url('../imagenes/vamosviendo.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .inicioP {
+        margin-top: 40px;
+        font-size: 20px;
+        color: #fff;
+    }
+
+    /* ABOUT */
+    .about {
+        display: block;
+        width: 75%;
+        margin: 0px auto;
+        padding: 100px 0px 75px 0px;
+        border-bottom: 1px solid #000;
+    }
+
+    .agop {
+        width: 200px;
+        border: 2px solid #000;
+        margin-top: 10px;
+        padding: 2px;
+        border-radius: 25px;
+    }
+
+    /*PROYECTS*/
+
+    .proyects{
+        display: block;
+        width: 75%;
+        margin: 0px auto;
+        padding: 100px 0px 75px 0px;
+        border-bottom: 1px solid #000;
+    }
+
+    /* CONTACT */
+    .contact {
+        width: 75%;
+        margin: 0px auto;
+        padding: 100px 0px 75px 0px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+    }
+    
+    .contactTitulo {
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+    
+    .contactForm{
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+        background-color: #fff;
+        padding: 50px;
+        font-size: 16px;
+        border-radius: 10px;
+        box-shadow: 2px 13px 5px 0px rgba(0,0,0,0.75);
+        text-align: center;
+        border: 1px solid #000;
+    }
+    
+    .contactDivArea, .contactSubject{
+        text-align: center;
+    }
+
+    
+    
+    
+    
+    
+    
+
+    
+   
+    
+    
 }
