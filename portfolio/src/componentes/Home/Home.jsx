@@ -16,7 +16,7 @@ import git from '../imagenes/img/github.png'
 import "aos/dist/aos.css";
 import s from './Home.module.css'
 import { useEffect } from 'react'
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
+
 
 
 export default function Home(){
@@ -40,9 +40,8 @@ export default function Home(){
                     {/* <div><img src={Codigo} alt='asd' width='350px'/></div> */}
                 </div>
             </div>
-            <div className={s.about} id='about' data-aos="fade-up-right">
-                
-                    <h2 className={s.aboutT}>ABOUT ME</h2>
+            <div className={s.about} id='about' >
+                <h2 className={s.aboutT}>ABOUT ME</h2>
                 <div className={s.desc}>
                     <h4 className={s.aboutH}>Who I Am</h4>
                     <p>I'm a FullStack Web Developer specializing in building and designing expectional digital expriencies.</p>
@@ -73,7 +72,7 @@ export default function Home(){
                     <img src={Agop} alt="" className={s.agop}/>
                 </div>
             </div>
-            <div className={s.proyects} id='proyects' data-aos="fade-up-left">
+            <div className={s.proyects} id='proyects' >
                 <h2 className={s.proyectsT}>PROYECTS</h2>
                 <div className={s.prueba}>
                 <h4 className={s.gridTitulo}>PokeDex</h4>
@@ -88,7 +87,7 @@ export default function Home(){
                 
                 
             </div>
-            <div id='contact' className={s.contact} data-aos="fade-up-right">
+            <div id='contact' className={s.contact} >
                 <h2 className={s.contactTitulo}>CONTACT</h2>
             <form className={s.contactForm} action="https://formsubmit.co/pow.chorba@hotmail.com" method="POST">
                 <div>

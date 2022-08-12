@@ -1,8 +1,5 @@
 .contenedor {
     text-align: center;
-    /* background-image: url('../imagenes/fondo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; */
 }
 
 
@@ -21,7 +18,7 @@
 
 .inicioT {
     font-size: 40px;
-    /* animation: titulo 10s infinite; */
+   
 
 }
 .imagenFondo{
@@ -238,12 +235,13 @@
     }
     .inicioT {
         font-size: 24px;
+        color: #fff;
     }
     .imagenFondo{
-        width: 100%;
         background-image: url('../imagenes/vamosviendo.jpg');
         background-size: cover;
         background-repeat: no-repeat;
+        
     }
     
     .inicioP {
