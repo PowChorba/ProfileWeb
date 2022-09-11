@@ -11,6 +11,7 @@ import node from '../imagenes/img/node.png'
 import sql from '../imagenes/img/sql.png'
 import sequelize from '../imagenes/img/sequelize.png'
 import POKE from '../imagenes/img/pokedex.PNG'
+import CHANGAPP from '../imagenes/Capture.PNG'
 import Linkedin from '../imagenes/img/linkedin.png'
 import git from '../imagenes/img/github.png'
 import "aos/dist/aos.css";
@@ -75,8 +76,7 @@ export default function Home() {
                 </div>
                 <div>
                     <img src={Agop} alt="" className={s.agop} />
-                </div>
-                {/* <FiArrowUpCircle className={s.arrow} onClick={onClick}/> */}
+                </div>               
             </div>
             <div className={s.proyects} id='proyects' >
                 <h2 className={s.proyectsT}>PROYECTS</h2>
@@ -90,7 +90,16 @@ export default function Home() {
                     <img src={POKE} alt="asd" width='100%' />
                     <a href="https://pi-pokemons-chi.vercel.app/" target="_onblank" className={s.linkRepo}>Link to Page</a>
                 </div>
-                {/* <FiArrowUpCircle className={s.arrow} onClick={onClick}/> */}
+                <div className={s.prueba}>
+                    <h4 className={s.gridTitulo}>ChangApp</h4>
+                    <div>
+                        <p>ChangApp is a page created for those people who are dedicated to doing quick and small jobs. 
+                            Where you publish your job offer and another person hires you, agreeing on the day and time. 
+                            In addition, people can rate you so you will reach more customers!</p>
+                    </div>
+                    <img src={CHANGAPP} alt="asd" width='100%' />
+                    <a href="https://changappv2.vercel.app/" target="_onblank" className={s.linkRepo}>Link to Page</a>
+                </div>
             </div>
             <div id='contact' className={s.contact} >
                 <h2 className={s.contactTitulo}>CONTACT</h2>
