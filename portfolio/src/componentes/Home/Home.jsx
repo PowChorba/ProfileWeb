@@ -128,7 +128,7 @@ export default function Home() {
             </div>
             <div className={s.footer}>
                 <h4>Created by Agop Chorbadjian</h4>
-                <a href="https://www.linkedin.com/in/agop-chorbadjian-369767218/" target="_onblank"><img src={Linkedin} alt="asd" width='48px' /></a>
+                <a href="https://www.linkedin.com/in/agopchorbadjian/" target="_onblank"><img src={Linkedin} alt="asd" width='48px' /></a>
                 <a href="https://github.com/PowChorba" target="_onblank"><img src={git} alt="asd" width='48px' /></a>
             </div>
         </div>)
