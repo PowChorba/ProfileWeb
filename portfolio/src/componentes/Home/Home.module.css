@@ -40,6 +40,21 @@
     color: #000;
 }
 
+.botonCV {
+    margin-top: 20px;
+    background-color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.cv {
+    text-decoration: none;
+    color: #fff;
+}
+
 /*ABOUT*/
 
 .about {

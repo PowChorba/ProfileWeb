@@ -42,8 +42,8 @@ export default function Home() {
                     <div>
                         <h1 className={s.inicioT}>Hello!<br /> I'm Agop Chorbadjian.</h1>
                         <p className={s.inicioP}>FullStack Web Developer</p>
+                    <button className={s.botonCV}><a href="./AgopChorbadjian.pdf" download className={s.cv}>Descargar CV</a></button>
                     </div>
-                    {/* <button>Download CV</button> */}
                 </div>
             </div>
             <div className={s.about} id='about' >
