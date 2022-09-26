@@ -9,6 +9,12 @@
     font-size: 30px;
 }
 
+.nav {
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
 /*INICIO*/
 
 .inicio {
@@ -17,21 +23,20 @@
     align-items: center;
     width: 75%;
     margin: 0px auto;
-    padding: 250px 0px 450px 50px;
+    padding: 150px 0px 450px 50px;
     border-bottom: 1px solid #000;
 }
 
 .inicioT {
     font-size: 40px;
-    /* color: rgb(14, 230, 136); */
     color: #000;
 
 }
 .imagenFondo{
-    margin-top: 60px;
-    /* width: 100%; */
-    background-image: url('../imagenes/fondo.jpg');
+    height: 100%;
+    background-image: url('../imagenes/vamosviendo.jpg');
     background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .inicioP {
@@ -63,7 +68,7 @@
     width: 75%;
     margin: 0px auto;
     padding: 200px 0px 150px 0px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
     
 }
 
@@ -109,7 +114,7 @@
     width: 75%;
     margin: 0px auto;
     padding: 200px 0px 150px 0px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
     
 }
 
@@ -130,18 +135,16 @@
     border-radius: 10px;
     padding: 10px;
     box-shadow: 2px 13px 5px 0px rgba(0, 0, 0, 0.80);
-    background-color: rgba(255, 255, 255, 0.507);
+    background-color: rgba(255, 255, 255, 0.171);
     /* background-color: rgba(0, 0, 0, 0.26); */
 }
 
 
 .linkRepo {
     text-decoration: none;
-    color: #fff;
     margin-top: 15px;
-}
-.linkRepo:hover {
-    border-bottom: 1px solid #fff;
+    color: #000;
+    border-bottom: 1px solid #000;
 }
 
 /*FORMULARIO*/
@@ -150,7 +153,7 @@
     width: 75%;
     margin: 0px auto;
     padding: 200px 0px 150px 0px;
-    border-bottom: 1px solid #fff;
+    border-bottom: 1px solid #000;
     text-align: center;
     position: relative;
 }
@@ -246,32 +249,160 @@
     cursor: pointer;
 }
 
-@media only screen and (max-width: 414px){
-    /* INICIO */
+@media only screen and (max-width: 1024px){
     .inicio {
         display: flex;
         align-items: center;
         justify-content: center;
         width: 75%;
         margin: 0px auto;
-        padding: 100px 0px 75px 0px;
-        
+        padding: 0px 0px 300px 30px;
+        height: 100vh;
     }
+
     .inicioT {
-        font-size: 24px;
+        font-size: 30px;
         color: #000;
+    
     }
+
     .imagenFondo{
-        background-image: url('../imagenes/fondo.jpg');
+        /* background-image: url('../imagenes/probando.jpg'); */
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .about {
+        display: block;
+        width: 75%;
+        margin: 0px auto;
+        padding: 75px 0px 30px 0px;
+        border-bottom: 1px solid #000;
+    }
+
+    .agop {
+        width: 300px;
+        border: 2px solid #000;
+        margin-top: 10px;
+        padding: 2px;
+        border-radius: 25px;
+    }
+
+    /*PROYECTS*/
+
+    .proyects{
+        display: block;
+        width: 75%;
+        margin: 0px auto;
+        padding: 100px 0px 75px 0px;
+        border-bottom: 1px solid #000;
+    }
+
+    /* CONTACT */
+    .contact {
+        width: 75%;
+        margin: 0px auto;
+        padding: 75px 0px 30px 0px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 912px){
+    .inicio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        margin: 0px auto;
+        padding: 0px;
+        height: 100vh;
+    }
+    .imagenFondo{
+        background-image: url('../imagenes/tablet.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .about {
+        display: block;
+        width: 75%;
+        margin: 0px auto;
+        padding: 75px 0px 30px 0px;
+        border-bottom: 1px solid #000;
+    }
+
+    .agop {
+        width: 300px;
+        border: 2px solid #000;
+        margin-top: 10px;
+        padding: 2px;
+        border-radius: 25px;
+    }
+
+    /* CONTACT */
+    .contact {
+        width: 75%;
+        margin: 0px auto;
+        padding: 75px 0px 30px 0px;
+        border-bottom: 1px solid #000;
+        text-align: center;
+    }
+    
+    .contactTitulo {
+        margin-bottom: 50px;
+        font-size: 30px;
+    }
+    
+    .contactForm{
+        display: block;
+        width: 100%;
+        margin: 0px auto;
+        background-color: #fff;
+        padding: 30px;
+        font-size: 16px;
+        border-radius: 10px;
+        box-shadow: 2px 13px 5px 0px rgba(0,0,0,0.75);
+        text-align: center;
+        border: 1px solid #000;
+        color: #000;
         
     }
     
+    .contactDivArea, .contactSubject{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    /* INICIO */
+    .inicio {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: 0px auto;
+        padding: 0px;
+        height: 100vh;
+    }
+
+    .inicioT {
+        font-size: 24px;
+    }
+
+    .imagenFondo{
+        background-image: url('../imagenes/telefono.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    
     .inicioP {
-        margin-top: 40px;
+        margin-top: 20px;
         font-size: 20px;
-        color: #fff;
     }
 
     /* ABOUT */
@@ -337,118 +468,4 @@
     .arrow{
         right: -30px;
     }
-}
-
-@media only screen and (max-width: 912px){
-    .inicio {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 75%;
-        margin: 0px auto;
-        padding: 100px 0px 75px 0px;
-        
-    }
-    .imagenFondo{
-        background-image: url('../imagenes/fondo.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
-    .about {
-        display: block;
-        width: 75%;
-        margin: 0px auto;
-        padding: 75px 0px 30px 0px;
-        border-bottom: 1px solid #000;
-    }
-
-    .agop {
-        width: 300px;
-        border: 2px solid #000;
-        margin-top: 10px;
-        padding: 2px;
-        border-radius: 25px;
-    }
-
-    /* CONTACT */
-    .contact {
-        width: 75%;
-        margin: 0px auto;
-        padding: 75px 0px 30px 0px;
-        border-bottom: 1px solid #000;
-        text-align: center;
-    }
-    
-    .contactTitulo {
-        margin-bottom: 50px;
-        font-size: 30px;
-    }
-    
-    .contactForm{
-        display: block;
-        width: 100%;
-        margin: 0px auto;
-        background-color: #fff;
-        padding: 30px;
-        font-size: 16px;
-        border-radius: 10px;
-        box-shadow: 2px 13px 5px 0px rgba(0,0,0,0.75);
-        text-align: center;
-        border: 1px solid #000;
-        color: #000;
-        
-    }
-    
-    .contactDivArea, .contactSubject{
-        text-align: center;
-    }
-}
-
-@media only screen and (max-width: 1024px){
-    .inicio {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 75%;
-        margin: 0px auto;
-        padding: 200px 0px 230px 0px;
-        
-    }
-
-    .about {
-        display: block;
-        width: 75%;
-        margin: 0px auto;
-        padding: 75px 0px 30px 0px;
-        border-bottom: 1px solid #000;
-    }
-
-    .agop {
-        width: 300px;
-        border: 2px solid #000;
-        margin-top: 10px;
-        padding: 2px;
-        border-radius: 25px;
-    }
-
-    /*PROYECTS*/
-
-    .proyects{
-        display: block;
-        width: 75%;
-        margin: 0px auto;
-        padding: 100px 0px 75px 0px;
-        border-bottom: 1px solid #000;
-    }
-
-    /* CONTACT */
-    .contact {
-        width: 75%;
-        margin: 0px auto;
-        padding: 75px 0px 30px 0px;
-        border-bottom: 1px solid #000;
-        text-align: center;
-    }
-    
 }
