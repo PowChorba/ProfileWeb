@@ -43,7 +43,7 @@ export default function HomeEng() {
                     <div>
                         <h1 className={s.inicioT}>Hello!<br /> I'm Agop Chorbadjian.</h1>
                         <p className={s.inicioP}>FullStack Web Developer</p>
-                    <button className={s.botonCV}><a href="./AgopChorbadjian(Ingles).pdf" download className={s.cv}>Download CV</a></button>
+                    <button className={s.botonCV}><a href="./AgopChorbadjianCV(Ingles).pdf" download className={s.cv}>Download CV</a></button>
                     </div>
                 </div>
             </div>
