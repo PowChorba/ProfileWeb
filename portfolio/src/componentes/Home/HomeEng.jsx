@@ -1,15 +1,17 @@
 import React from 'react'
 import AOS from 'aos'
 import Nav from '../Nav/Nav'
-import Agop from '../imagenes/perfil.jpg'
+import Agop from '../imagenes/perfil.svg'
 import HTML from '../imagenes/img/html.png'
 import css from '../imagenes/img/css.png'
 import js from '../imagenes/img/js.png'
+import ts from '../imagenes/img/ts.png'
 import react from '../imagenes/img/react.png'
 import redux from '../imagenes/img/redux.png'
 import node from '../imagenes/img/node.png'
 import sql from '../imagenes/img/sql.png'
 import sequelize from '../imagenes/img/sequelize.png'
+import mongoDb from '../imagenes/img/mongoDb.png'
 import POKE from '../imagenes/img/pokedex.PNG'
 import CHANGAPP from '../imagenes/Capture.PNG'
 import Linkedin from '../imagenes/img/linkedin.png'
@@ -68,10 +70,12 @@ export default function HomeEng() {
                         <img src={HTML} alt="asd" className={s.iconsGrandes} />
                         <img src={css} alt="asd" className={s.iconsGrandes} />
                         <img src={js} alt="asd" className={s.iconsGrandes} />
+                        <img src={ts} alt="asd" className={s.iconsGrandes} />
                         <img src={react} alt="asd" width="48px" height="48px" className={s.iconsGrandes} />
                         <img src={redux} alt="asd" className={s.iconsGrandes} />
                         <img src={node} alt="asd" className={s.iconsGrandes} />
                         <img src={sql} alt="asd" className={s.iconsGrandes} />
+                        <img src={mongoDb} alt="asd" className={s.iconsGrandes} />
                         <img src={sequelize} alt="asd" width="48px" height="48px" className={s.iconsGrandes} />
                     </div>
                 </div>
