@@ -14,6 +14,7 @@ import sequelize from '../imagenes/img/sequelize.png'
 import mongoDb from '../imagenes/img/mongoDb.png'
 import POKE from '../imagenes/img/pokedex.PNG'
 import CHANGAPP from '../imagenes/Capture.PNG'
+import FASTCHAT from '../imagenes/img/FastChatImg.PNG'
 import Linkedin from '../imagenes/img/linkedin.png'
 import git from '../imagenes/img/github.png'
 import "aos/dist/aos.css";
@@ -104,6 +105,16 @@ export default function HomeEng() {
                     </div>
                     <img src={CHANGAPP} alt="asd" width='100%' />
                     <a href="https://changappv2.vercel.app/" target="_onblank" className={s.linkRepo}>Link to Page</a>
+                </div>
+                <div className={s.prueba} data-aos="flip-right">
+                    <h4 className={s.gridTitulo}>FastChat</h4>
+                    <div>
+                        <p>FastChat is a chat in real time, which consists of a registration system, login and email verification. Once entered on the main page,
+                            you will be able to add, delete and block contacts. At the same time, you can create private chats and group chats. Also you can send images, icons,
+                            audios and text messages.</p>    
+                    </div>
+                    <img src={FASTCHAT} alt="asd" width='100%' />
+                    <a href="https://fast-chat-bice.vercel.app/" target="_onblank" className={s.linkRepo}>Link to Page</a>
                 </div>
             </div>
             <div className={s.contact} id='contact' data-aos="fade-right">
