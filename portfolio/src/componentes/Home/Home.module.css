@@ -1,5 +1,6 @@
 .contenedor {
     text-align: center;
+    overflow-x: hidden;
 }
 
 .arrow {
