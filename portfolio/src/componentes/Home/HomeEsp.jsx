@@ -94,7 +94,7 @@ export default function HomeEsp() {
                         </p>    
                     </div>
                     <img src={POKE} alt="asd" width='100%' />
-                    <a href="https://pi-pokemons-chi.vercel.app/" target="_onblank" className={s.linkRepo}>Link a la Pagina</a>
+                    <a href="https://pi-pokemons-chi.vercel.app/" target="_onblank" className={s.linkRepo}>Link a la Pagina</a>{' - '}
                     <a href="https://github.com/PowChorba/PI-POKEMONS" target="_onblank" className={s.linkRepo}>Link a GitHub</a>
                 </div>
                 <div className={s.prueba} data-aos="flip-right">
@@ -105,7 +105,7 @@ export default function HomeEsp() {
                             Ademas, los clientes pueden dejar reseñas a los perfiles y asi alcanzar a mas clientes!</p>    
                     </div>
                     <img src={CHANGAPP} alt="asd" width='100%' />
-                    <a href="https://changappv2.vercel.app/" target="_onblank" className={s.linkRepo}>Link a la Pagina</a>
+                    <a href="https://changappv2.vercel.app/" target="_onblank" className={s.linkRepo}>Link a la Pagina</a>{' - '}
                     <a href="https://github.com/LuH3ss/changaapp/tree/Agop" target="_onblank" className={s.linkRepo}>Link a GitHub</a>
                 </div>
                 <div className={s.prueba} data-aos="flip-right">
@@ -116,7 +116,7 @@ export default function HomeEsp() {
                         audios y mensajes de texto.</p>    
                     </div>
                     <img src={FASTCHAT} alt="asd" width='100%' />
-                    <a href="https://fast-chat-bice.vercel.app/" target="_onblank" className={s.linkRepo}>Link a la Pagina</a>
+                    <a href="https://fast-chat-bice.vercel.app/" target="_onblank" className={s.linkRepo}>Link a la Pagina</a>{' - '}
                     <a href="https://github.com/PowChorba/FastChat" target="_onblank" className={s.linkRepo}>Link a GitHub</a>
                 </div>
             </div>
