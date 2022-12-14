@@ -94,7 +94,8 @@ export default function HomeEng() {
                             with all their information. In turn, a new Pokemon can be created.</p>
                     </div>
                     <img src={POKE} alt="asd" width='100%' />
-                    <a href="https://pi-pokemons-chi.vercel.app/" target="_onblank" className={s.linkRepo}>Link to Page</a>
+                    <a href="https://pi-pokemons-chi.vercel.app/" target="_onblank" className={s.linkRepo}>Link to Page</a>{' - '}
+                    <a href="https://github.com/PowChorba/PI-POKEMONS" target="_onblank" className={s.linkRepo}>Link to GitHub</a>
                 </div>
                 <div className={s.prueba} data-aos="flip-right">
                     <h4 className={s.gridTitulo}>ChangApp</h4>
@@ -104,7 +105,8 @@ export default function HomeEng() {
                             In addition, people can rate you so you will reach more customers!</p>
                     </div>
                     <img src={CHANGAPP} alt="asd" width='100%' />
-                    <a href="https://changappv2.vercel.app/" target="_onblank" className={s.linkRepo}>Link to Page</a>
+                    <a href="https://changappv2.vercel.app/" target="_onblank" className={s.linkRepo}>Link to Page</a>{' - '}
+                    <a href="https://github.com/LuH3ss/changaapp/tree/Agop" target="_onblank" className={s.linkRepo}>Link to GitHub</a>
                 </div>
                 <div className={s.prueba} data-aos="flip-right">
                     <h4 className={s.gridTitulo}>FastChat</h4>
@@ -114,7 +116,8 @@ export default function HomeEng() {
                             audios and text messages.</p>    
                     </div>
                     <img src={FASTCHAT} alt="asd" width='100%' />
-                    <a href="https://fast-chat-bice.vercel.app/" target="_onblank" className={s.linkRepo}>Link to Page</a>
+                    <a href="https://fast-chat-bice.vercel.app/" target="_onblank" className={s.linkRepo}>Link to Page</a>{' - '}
+                    <a href="https://github.com/PowChorba/FastChat" target="_onblank" className={s.linkRepo}>Link to GitHub</a>
                 </div>
             </div>
             <div className={s.contact} id='contact' data-aos="fade-right">
