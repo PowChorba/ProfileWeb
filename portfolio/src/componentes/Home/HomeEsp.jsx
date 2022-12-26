@@ -116,7 +116,7 @@ export default function HomeEsp() {
                         audios y mensajes de texto.</p>    
                     </div>
                     <img src={FASTCHAT} alt="asd" width='100%' />
-                    <a href="https://fast-chat-bice.vercel.app/" target="_onblank" className={s.linkRepo}>Link a la Pagina</a>{' - '}
+                    <a href="https://fast-chat-chi.vercel.app/" target="_onblank" className={s.linkRepo}>Link a la Pagina</a>{' - '}
                     <a href="https://github.com/PowChorba/FastChat" target="_onblank" className={s.linkRepo}>Link a GitHub</a>
                 </div>
             </div>
